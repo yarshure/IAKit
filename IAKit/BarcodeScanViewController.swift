@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-import IAKit
+
 /// The tunnel delegate protocol.
 @objc public  protocol BarcodeScanDelegate: class {
     func barcodeScanDidScan(controller: BarcodeScanViewController, configString:String)

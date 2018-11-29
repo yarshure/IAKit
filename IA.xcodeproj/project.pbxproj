@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690BB2AA21AFA00000C72118 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BB2A921AFA00000C72118 /* Extension.swift */; };
+		690BB2AC21AFAB2800C72118 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BB2AB21AFAB2800C72118 /* MasterViewController.swift */; };
+		690BB2AE21AFAC1E00C72118 /* ColorImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BB2AD21AFAC1E00C72118 /* ColorImageViewController.swift */; };
+		690BB2B021AFB3E700C72118 /* SFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BB2AF21AFB3E700C72118 /* SFTextField.swift */; };
+		690BB2B221AFB5BB00C72118 /* KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BB2B121AFB5BB00C72118 /* KeyBoard.swift */; };
 		69AC66AF21AF797600EA7D37 /* Qrscan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AC66AB21AF758400EA7D37 /* Qrscan.storyboard */; };
 		69AC66B021AF797A00EA7D37 /* BarcodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC66A921AF750200EA7D37 /* BarcodeScanViewController.swift */; };
 		69AC68C521AF681200E07BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68C421AF681200E07BA1 /* AppDelegate.swift */; };
@@ -48,6 +53,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		690BB2A921AFA00000C72118 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		690BB2AB21AFAB2800C72118 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		690BB2AD21AFAC1E00C72118 /* ColorImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorImageViewController.swift; sourceTree = "<group>"; };
+		690BB2AF21AFB3E700C72118 /* SFTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTextField.swift; sourceTree = "<group>"; };
+		690BB2B121AFB5BB00C72118 /* KeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoard.swift; sourceTree = "<group>"; };
 		69AC66A921AF750200EA7D37 /* BarcodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScanViewController.swift; sourceTree = "<group>"; };
 		69AC66AB21AF758400EA7D37 /* Qrscan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Qrscan.storyboard; sourceTree = "<group>"; };
 		69AC68C121AF681200E07BA1 /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +118,8 @@
 			children = (
 				69AC68C421AF681200E07BA1 /* AppDelegate.swift */,
 				69AC68C621AF681200E07BA1 /* ViewController.swift */,
+				690BB2AD21AFAC1E00C72118 /* ColorImageViewController.swift */,
+				690BB2AB21AFAB2800C72118 /* MasterViewController.swift */,
 				69AC68C821AF681200E07BA1 /* Main.storyboard */,
 				69AC68CB21AF681300E07BA1 /* Assets.xcassets */,
 				69AC68CD21AF681300E07BA1 /* LaunchScreen.storyboard */,
@@ -121,12 +133,15 @@
 			children = (
 				69AC66AB21AF758400EA7D37 /* Qrscan.storyboard */,
 				69AC66A921AF750200EA7D37 /* BarcodeScanViewController.swift */,
+				690BB2A921AFA00000C72118 /* Extension.swift */,
 				69AC68E921AF688600E07BA1 /* IAViewController.swift */,
 				69AC68ED21AF6B8200E07BA1 /* String+Ext.swift */,
 				69AC68DE21AF684D00E07BA1 /* IAKit.h */,
+				690BB2AF21AFB3E700C72118 /* SFTextField.swift */,
 				69AC68DF21AF684D00E07BA1 /* Info.plist */,
 				69AC68EB21AF695E00E07BA1 /* UIImage+Ext.swift */,
 				69AC68EF21AF6C6000E07BA1 /* IATableViewController.swift */,
+				690BB2B121AFB5BB00C72118 /* KeyBoard.swift */,
 			);
 			path = IAKit;
 			sourceTree = "<group>";
@@ -248,6 +263,8 @@
 			files = (
 				69AC68C721AF681200E07BA1 /* ViewController.swift in Sources */,
 				69AC68C521AF681200E07BA1 /* AppDelegate.swift in Sources */,
+				690BB2AE21AFAC1E00C72118 /* ColorImageViewController.swift in Sources */,
+				690BB2AC21AFAB2800C72118 /* MasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +274,12 @@
 			files = (
 				69AC68EE21AF6B8200E07BA1 /* String+Ext.swift in Sources */,
 				69AC68EA21AF688600E07BA1 /* IAViewController.swift in Sources */,
+				690BB2B221AFB5BB00C72118 /* KeyBoard.swift in Sources */,
 				69AC68EC21AF695E00E07BA1 /* UIImage+Ext.swift in Sources */,
+				690BB2AA21AFA00000C72118 /* Extension.swift in Sources */,
 				69AC68F021AF6C6000E07BA1 /* IATableViewController.swift in Sources */,
 				69AC66B021AF797A00EA7D37 /* BarcodeScanViewController.swift in Sources */,
+				690BB2B021AFB3E700C72118 /* SFTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
