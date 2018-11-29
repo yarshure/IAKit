@@ -7,14 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69AC66AF21AF797600EA7D37 /* Qrscan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AC66AB21AF758400EA7D37 /* Qrscan.storyboard */; };
+		69AC66B021AF797A00EA7D37 /* BarcodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC66A921AF750200EA7D37 /* BarcodeScanViewController.swift */; };
 		69AC68C521AF681200E07BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68C421AF681200E07BA1 /* AppDelegate.swift */; };
 		69AC68C721AF681200E07BA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68C621AF681200E07BA1 /* ViewController.swift */; };
 		69AC68CA21AF681200E07BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AC68C821AF681200E07BA1 /* Main.storyboard */; };
 		69AC68CC21AF681300E07BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AC68CB21AF681300E07BA1 /* Assets.xcassets */; };
 		69AC68CF21AF681300E07BA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AC68CD21AF681300E07BA1 /* LaunchScreen.storyboard */; };
+		69AC68E021AF684D00E07BA1 /* IAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 69AC68DE21AF684D00E07BA1 /* IAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69AC68E321AF684D00E07BA1 /* IAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AC68DC21AF684D00E07BA1 /* IAKit.framework */; };
+		69AC68E421AF684D00E07BA1 /* IAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69AC68DC21AF684D00E07BA1 /* IAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69AC68EA21AF688600E07BA1 /* IAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68E921AF688600E07BA1 /* IAViewController.swift */; };
+		69AC68EC21AF695E00E07BA1 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68EB21AF695E00E07BA1 /* UIImage+Ext.swift */; };
+		69AC68EE21AF6B8200E07BA1 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68ED21AF6B8200E07BA1 /* String+Ext.swift */; };
+		69AC68F021AF6C6000E07BA1 /* IATableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC68EF21AF6C6000E07BA1 /* IATableViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		69AC68E121AF684D00E07BA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69AC68B921AF681200E07BA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69AC68DB21AF684D00E07BA1;
+			remoteInfo = IAKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		69AC68E821AF684D00E07BA1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				69AC68E421AF684D00E07BA1 /* IAKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		69AC66A921AF750200EA7D37 /* BarcodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScanViewController.swift; sourceTree = "<group>"; };
+		69AC66AB21AF758400EA7D37 /* Qrscan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Qrscan.storyboard; sourceTree = "<group>"; };
 		69AC68C121AF681200E07BA1 /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AC68C421AF681200E07BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69AC68C621AF681200E07BA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,10 +57,25 @@
 		69AC68CB21AF681300E07BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69AC68CE21AF681300E07BA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69AC68D021AF681300E07BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69AC68DC21AF684D00E07BA1 /* IAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69AC68DE21AF684D00E07BA1 /* IAKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAKit.h; sourceTree = "<group>"; };
+		69AC68DF21AF684D00E07BA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69AC68E921AF688600E07BA1 /* IAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAViewController.swift; sourceTree = "<group>"; };
+		69AC68EB21AF695E00E07BA1 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		69AC68ED21AF6B8200E07BA1 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		69AC68EF21AF6C6000E07BA1 /* IATableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IATableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		69AC68BE21AF681200E07BA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69AC68E321AF684D00E07BA1 /* IAKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69AC68D921AF684D00E07BA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				69AC68C321AF681200E07BA1 /* IA */,
+				69AC68DD21AF684D00E07BA1 /* IAKit */,
 				69AC68C221AF681200E07BA1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				69AC68C121AF681200E07BA1 /* IA.app */,
+				69AC68DC21AF684D00E07BA1 /* IAKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +116,33 @@
 			path = IA;
 			sourceTree = "<group>";
 		};
+		69AC68DD21AF684D00E07BA1 /* IAKit */ = {
+			isa = PBXGroup;
+			children = (
+				69AC66AB21AF758400EA7D37 /* Qrscan.storyboard */,
+				69AC66A921AF750200EA7D37 /* BarcodeScanViewController.swift */,
+				69AC68E921AF688600E07BA1 /* IAViewController.swift */,
+				69AC68ED21AF6B8200E07BA1 /* String+Ext.swift */,
+				69AC68DE21AF684D00E07BA1 /* IAKit.h */,
+				69AC68DF21AF684D00E07BA1 /* Info.plist */,
+				69AC68EB21AF695E00E07BA1 /* UIImage+Ext.swift */,
+				69AC68EF21AF6C6000E07BA1 /* IATableViewController.swift */,
+			);
+			path = IAKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		69AC68D721AF684D00E07BA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69AC68E021AF684D00E07BA1 /* IAKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		69AC68C021AF681200E07BA1 /* IA */ = {
@@ -74,15 +152,35 @@
 				69AC68BD21AF681200E07BA1 /* Sources */,
 				69AC68BE21AF681200E07BA1 /* Frameworks */,
 				69AC68BF21AF681200E07BA1 /* Resources */,
+				69AC68E821AF684D00E07BA1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				69AC68E221AF684D00E07BA1 /* PBXTargetDependency */,
 			);
 			name = IA;
 			productName = IA;
 			productReference = 69AC68C121AF681200E07BA1 /* IA.app */;
 			productType = "com.apple.product-type.application";
+		};
+		69AC68DB21AF684D00E07BA1 /* IAKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69AC68E521AF684D00E07BA1 /* Build configuration list for PBXNativeTarget "IAKit" */;
+			buildPhases = (
+				69AC68D721AF684D00E07BA1 /* Headers */,
+				69AC68D821AF684D00E07BA1 /* Sources */,
+				69AC68D921AF684D00E07BA1 /* Frameworks */,
+				69AC68DA21AF684D00E07BA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IAKit;
+			productName = IAKit;
+			productReference = 69AC68DC21AF684D00E07BA1 /* IAKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +194,10 @@
 				TargetAttributes = {
 					69AC68C021AF681200E07BA1 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					69AC68DB21AF684D00E07BA1 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -113,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				69AC68C021AF681200E07BA1 /* IA */,
+				69AC68DB21AF684D00E07BA1 /* IAKit */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +231,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69AC68DA21AF684D00E07BA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69AC66AF21AF797600EA7D37 /* Qrscan.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +251,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69AC68D821AF684D00E07BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69AC68EE21AF6B8200E07BA1 /* String+Ext.swift in Sources */,
+				69AC68EA21AF688600E07BA1 /* IAViewController.swift in Sources */,
+				69AC68EC21AF695E00E07BA1 /* UIImage+Ext.swift in Sources */,
+				69AC68F021AF6C6000E07BA1 /* IATableViewController.swift in Sources */,
+				69AC66B021AF797A00EA7D37 /* BarcodeScanViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69AC68E221AF684D00E07BA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69AC68DB21AF684D00E07BA1 /* IAKit */;
+			targetProxy = 69AC68E121AF684D00E07BA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		69AC68C821AF681200E07BA1 /* Main.storyboard */ = {
@@ -281,6 +412,7 @@
 		69AC68D421AF681300E07BA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 745WQDK4L7;
@@ -299,6 +431,7 @@
 		69AC68D521AF681300E07BA1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 745WQDK4L7;
@@ -311,6 +444,65 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		69AC68E621AF684D00E07BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 745WQDK4L7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IAKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yarshure.IAKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69AC68E721AF684D00E07BA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 745WQDK4L7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IAKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yarshure.IAKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -331,6 +523,15 @@
 			buildConfigurations = (
 				69AC68D421AF681300E07BA1 /* Debug */,
 				69AC68D521AF681300E07BA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69AC68E521AF684D00E07BA1 /* Build configuration list for PBXNativeTarget "IAKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69AC68E621AF684D00E07BA1 /* Debug */,
+				69AC68E721AF684D00E07BA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

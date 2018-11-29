@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bKM-1N-aSQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QR SCAN-->
+        <scene sceneID="DTD-QK-pKD">
+            <objects>
+                <viewController storyboardIdentifier="Qrscan" title="QR SCAN" id="bKM-1N-aSQ" customClass="BarcodeScanViewController" customModule="IAKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sEv-qa-vf1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MfV-AK-L2h">
+                                <rect key="frame" x="0.0" y="20" width="57.5" height="647"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.56183978873239437" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3O-7C-gvv">
+                                <rect key="frame" x="317.5" y="20" width="57.5" height="647"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.56183978869999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZY-vf-wpm">
+                                <rect key="frame" x="57.5" y="20" width="260" height="93.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9V9-l8-Q1d">
+                                        <rect key="frame" x="0.0" y="20" width="48" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancleAction:" destination="bKM-1N-aSQ" eventType="touchUpInside" id="FHJ-ue-jc9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.56183978869999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9V9-l8-Q1d" firstAttribute="top" secondItem="ZZY-vf-wpm" secondAttribute="top" constant="20" id="V3N-u3-Gqk"/>
+                                    <constraint firstItem="9V9-l8-Q1d" firstAttribute="leading" secondItem="ZZY-vf-wpm" secondAttribute="leading" id="XLf-fh-kVM"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1g-m9-Yhe">
+                                <rect key="frame" x="57.5" y="373.5" width="260" height="293.5"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.56183978869999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ns7-Z4-DOU" userLabel="center">
+                                <rect key="frame" x="57.5" y="113.5" width="260" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiM-h8-7l0">
+                                        <rect key="frame" x="55" y="194" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="9Wd-lh-vAB"/>
+                                            <constraint firstAttribute="height" constant="30" id="fco-HR-5Nc"/>
+                                        </constraints>
+                                        <state key="normal" title="Tap to Turn on"/>
+                                        <connections>
+                                            <action selector="turnOn:" destination="bKM-1N-aSQ" eventType="touchUpInside" id="Xrc-MJ-ySo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="4y0-10-bp7"/>
+                                    <constraint firstAttribute="width" secondItem="ns7-Z4-DOU" secondAttribute="height" id="Zw0-BY-hMK"/>
+                                    <constraint firstAttribute="bottom" secondItem="LiM-h8-7l0" secondAttribute="bottom" constant="36" id="eOv-GN-f8F"/>
+                                    <constraint firstItem="LiM-h8-7l0" firstAttribute="centerX" secondItem="ns7-Z4-DOU" secondAttribute="centerX" id="uub-n1-pGS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MfV-AK-L2h" firstAttribute="leading" secondItem="vLn-2w-5dl" secondAttribute="leading" id="1EK-yy-OpJ"/>
+                            <constraint firstItem="ZZY-vf-wpm" firstAttribute="centerX" secondItem="vLn-2w-5dl" secondAttribute="centerX" id="6Ef-mr-PEe"/>
+                            <constraint firstItem="vLn-2w-5dl" firstAttribute="trailing" secondItem="E3O-7C-gvv" secondAttribute="trailing" id="Ak8-WP-Bct"/>
+                            <constraint firstItem="ns7-Z4-DOU" firstAttribute="centerX" secondItem="vLn-2w-5dl" secondAttribute="centerX" id="ENR-9G-4uz"/>
+                            <constraint firstItem="vLn-2w-5dl" firstAttribute="bottom" secondItem="MfV-AK-L2h" secondAttribute="bottom" id="IWr-hm-Qob"/>
+                            <constraint firstItem="vLn-2w-5dl" firstAttribute="bottom" secondItem="E3O-7C-gvv" secondAttribute="bottom" id="KDe-Kd-9SG"/>
+                            <constraint firstItem="vLn-2w-5dl" firstAttribute="bottom" secondItem="p1g-m9-Yhe" secondAttribute="bottom" id="PF3-sd-r1O"/>
+                            <constraint firstItem="vLn-2w-5dl" firstAttribute="top" secondItem="ZZY-vf-wpm" secondAttribute="top" id="PU4-G1-DGE"/>
+                            <constraint firstItem="ZZY-vf-wpm" firstAttribute="width" secondItem="ns7-Z4-DOU" secondAttribute="width" id="R2U-I8-1sW"/>
+                            <constraint firstItem="p1g-m9-Yhe" firstAttribute="width" secondItem="ns7-Z4-DOU" secondAttribute="width" id="d01-EE-vNA"/>
+                            <constraint firstItem="E3O-7C-gvv" firstAttribute="width" secondItem="MfV-AK-L2h" secondAttribute="width" id="d4W-fm-hWC"/>
+                            <constraint firstItem="MfV-AK-L2h" firstAttribute="top" secondItem="vLn-2w-5dl" secondAttribute="top" id="ejm-yJ-COd"/>
+                            <constraint firstItem="p1g-m9-Yhe" firstAttribute="top" secondItem="ns7-Z4-DOU" secondAttribute="bottom" id="mlK-kj-2rd"/>
+                            <constraint firstItem="p1g-m9-Yhe" firstAttribute="centerX" secondItem="ns7-Z4-DOU" secondAttribute="centerX" id="o8I-gi-PsT"/>
+                            <constraint firstItem="ns7-Z4-DOU" firstAttribute="top" secondItem="ZZY-vf-wpm" secondAttribute="bottom" id="tPw-sl-5tc"/>
+                            <constraint firstItem="MfV-AK-L2h" firstAttribute="trailing" secondItem="ns7-Z4-DOU" secondAttribute="leading" id="tWK-Su-qDj"/>
+                            <constraint firstItem="vLn-2w-5dl" firstAttribute="top" secondItem="E3O-7C-gvv" secondAttribute="top" id="uau-Ke-u86"/>
+                            <constraint firstItem="ns7-Z4-DOU" firstAttribute="centerY" secondItem="vLn-2w-5dl" secondAttribute="centerY" constant="-100" id="zCg-pg-cs9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vLn-2w-5dl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QR SCAN" id="nTS-SN-aiA"/>
+                    <connections>
+                        <outlet property="containerView" destination="MfV-AK-L2h" id="gSw-ER-VdN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8H-MR-eOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533.60000000000002" y="103.89805097451276"/>
+        </scene>
+    </scenes>
+</document>
